@@ -1,0 +1,34 @@
+PYTHON ASSIGNMENT 3 TASK 1
+
+INPUT
+def factorial(n=int(input("ENTER A NUMBER:"))):
+    if n<2:
+        return 1
+    else:
+        return n*(factorial(n - 1))
+
+result=factorial()
+print("THE FACTORIAL VALUE IS",result)
+
+OUTPUT
+ENTER A NUMBER:5
+THE FACTORIAL VALUE IS 120
+
+Process finished with exit code 0
+
+
+TASK 2
+INPUT
+import math
+n=int(input("ENTER A NUMBER:"))
+print("SQUARE ROOT OF",n,"IS:",math.sqrt(n))
+print("LOGARITHM  OF",n,"IS:",math.log(n))
+print("SINE OF",n,"IS:",math.sin(n))
+
+OUTPUT
+ENTER A NUMBER:25
+SQUARE ROOT OF 25 IS: 5.0
+LOGARITHM  OF 25 IS: 3.2188758248682006
+SINE OF 25 IS: -0.13235175009777303
+
+Process finished with exit code 0
