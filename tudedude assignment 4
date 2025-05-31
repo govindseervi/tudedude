@@ -1,0 +1,49 @@
+ASSIGNMENT 4 TASK 1
+
+IF FILE NOT EXIST 
+INPUT
+with open("sample.txt","r") as newfile1:
+    print(newfile1.read())
+    newfile1.close()
+
+OUTPUT
+FileNotFoundError: [Errno 2] No such file or directory: 'sample.txt'
+
+IF FILE EXIST
+INPUT
+with open("sample.txt","r") as newfile1:
+    print("LINE1:",newfile1.readlines(1))
+    print("LINE2:",newfile1.readlines(2))
+    newfile1.close()
+
+OUTPUT
+LINE1: ['this is a sample text file\n']
+LINE2: ['it contains multiple lines']
+
+
+
+TASK2
+INPUT
+with open("output.txt", "w") as newfile1:
+    x=input("ENTER THE TEXT TO WRITE TO THE FILE:")
+    x = newfile1.write(x+"\n")
+    newfile1.close()
+    print("DATA SUCCESSFULLY WRITTEN TO output.txt.")
+
+with open("output.txt", "a") as newfile1:
+    x=input("ENTER ADDITIONAL TEXT TO APPEND:")
+    x=newfile1.write(x)
+    newfile1.close()
+    print("DATA SUCCESSFULLY APPENDED.")
+
+with open("output.txt", "r") as newfile1:
+    print("FINAL CONTENT OF output.txt FILE:",newfile1.read())
+    newfile1.close()
+
+OUTPUT
+ENTER THE TEXT TO WRITE TO THE FILE:hey,python
+DATA SUCCESSFULLY WRITTEN TO output.txt.
+ENTER ADDITIONAL TEXT TO APPEND:learning file handling in python
+DATA SUCCESSFULLY APPENDED.
+FINAL CONTENT OF output.txt FILE: hey,python
+learning file handling in python
