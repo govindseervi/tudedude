@@ -1,0 +1,33 @@
+#tutedude assignment 5 TASK-1
+#INPUT
+x=(input("ENTER THE STUDENT NAME:"))
+stu_mar={"arun":90,"praveen":85,"govind":80}
+if x in stu_mar:
+    print(x,"'s MARKS:",stu_mar[x])
+else:
+    print(x,"STUDENT NOT FOUND")
+
+#OUTPUT IF STUDENT EXISTS
+
+#ENTER THE STUDENT NAME:govind
+#govind 's MARKS: 80
+
+#OUTPUT IF STUDENT NOT EXISTS
+
+#ENTER THE STUDENT NAME:akash
+#akash STUDENT NOT FOUND
+
+#TASK-2
+#INPUT
+
+a=list(range(1,11))
+b=a[:5]
+c=b[::-1]
+print("ORIGINAL LIST:",a)
+print("THE EXTRACTED LIST:",b)
+print("THE REVERSED LIST:",c)
+
+#OUTPUT
+#ORIGINAL LIST: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#THE EXTRACTED LIST: [1, 2, 3, 4, 5]
+#THE REVERSED LIST: [5, 4, 3, 2, 1]
